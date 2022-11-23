@@ -269,7 +269,10 @@ __metadata:
     "@commitlint/cli": 17.1.2
     "@commitlint/config-conventional": 17.1.0
     "@commitlint/cz-commitlint": 17.1.2
+    "@softwareventures/chain": ^2.0.2
     "@softwareventures/eslint-config": 7.0.1
+    "@softwareventures/iterable": ^3.2.0
+    "@softwareventures/nullable": ^3.0.0
     "@softwareventures/precise-commits": 3.0.1
     "@softwareventures/prettier-config": 3.0.0
     "@softwareventures/semantic-release-config": 3.0.0
@@ -862,6 +865,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@softwareventures/chain@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "@softwareventures/chain@npm:2.0.2"
+  checksum: 9ff45fbb6d15045f699c7cad209216a886b1ea972b96333bcb79134f7b184a3491631a4a36426679624098958689a883543bfa14b6bedf991b2bd2e27f4b8bdc
+  languageName: node
+  linkType: hard
+
 "@softwareventures/eslint-config@npm:7.0.1":
   version: 7.0.1
   resolution: "@softwareventures/eslint-config@npm:7.0.1"
@@ -881,12 +891,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@softwareventures/iterable@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "@softwareventures/iterable@npm:3.2.0"
+  dependencies:
+    "@softwareventures/nullable": ^1.0.0 || ^1.2.1 || ^2.0.0 || ^3.0.0
+    "@softwareventures/ordered": ^0.2.2 || ^1.0.0 || ^2.0.0
+    tslib: 2.4.1
+  checksum: 7cd52c70c4c0783bbf6fc2bb93d77c00005741893df644d27584838a405af8f833c16b09b9b90146f0db5f604cde7d73edf076a14a10f5cb3157428790ee39de
+  languageName: node
+  linkType: hard
+
 "@softwareventures/nullable@npm:2.0.0, @softwareventures/nullable@npm:^1.0.0 || ^2.0.0":
   version: 2.0.0
   resolution: "@softwareventures/nullable@npm:2.0.0"
   dependencies:
     tslib: 2.3.0
   checksum: cdfe2d5cd35e6eb878cdcdcf8626d02f38a152f5529bce6b473d20bbded5ba5e16e851016de17dcc4fcec6fa1430032b8b1e4345504caa09ed178ce7c1733d90
+  languageName: node
+  linkType: hard
+
+"@softwareventures/nullable@npm:^1.0.0 || ^1.2.1 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@softwareventures/nullable@npm:3.0.0"
+  dependencies:
+    tslib: 2.4.0
+  checksum: 19775dce03995984daef0a8c6b81b4e9f8f9ab770d6b09d815968b9ac2be368a2f144aa68201b002652880ce3587de3a8267f457882682abe8e34629745f2df8
+  languageName: node
+  linkType: hard
+
+"@softwareventures/ordered@npm:^0.2.2 || ^1.0.0 || ^2.0.0":
+  version: 2.0.0
+  resolution: "@softwareventures/ordered@npm:2.0.0"
+  dependencies:
+    tslib: ^1.9.3 || ^2.0.0 || ^2.1.0
+  checksum: b6f87b980eaaf498efce7642a17e13ba52c5c36fabc42fdca14d2d64dcda1a1424c4c67b4263bf51eab0654c6eae6782f2d4427c51eda4e7431214625e0c9fef
   languageName: node
   linkType: hard
 
@@ -7207,17 +7246,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tslib@npm:2.4.1, tslib@npm:^1.9.3 || ^2.0.0 || ^2.1.0, tslib@npm:^2.0.0, tslib@npm:^2.1.0, tslib@npm:^2.3.1":
+  version: 2.4.1
+  resolution: "tslib@npm:2.4.1"
+  checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^1.8.1":
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^1.9.3 || ^2.0.0 || ^2.1.0, tslib@npm:^2.0.0, tslib@npm:^2.1.0, tslib@npm:^2.3.1":
-  version: 2.4.1
-  resolution: "tslib@npm:2.4.1"
-  checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
   languageName: node
   linkType: hard
 
