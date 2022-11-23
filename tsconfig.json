@@ -1,7 +1,8 @@
 {
-  "extends": "@softwareventures/tsconfig/commonjs",
+  "extends": "@softwareventures/tsconfig/dom-commonjs",
   "compilerOptions": {
-    "types": []
+    "types": [],
+    "skipLibCheck": true
   },
   "exclude": ["**/*.test.ts", "**/test.ts"]
 }
