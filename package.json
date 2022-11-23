@@ -28,6 +28,9 @@
   "dependencies": {
     "tslib": "2.4.0"
   },
+  "peerDependencies": {
+    "excalibur": "^0.25.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
@@ -48,6 +51,7 @@
     "eslint-plugin-jsdoc": "39.3.6",
     "eslint-plugin-prefer-arrow": "1.2.3",
     "eslint-plugin-sonarjs": "0.16.0",
+    "excalibur": "0.25.3",
     "husky": "8.0.1",
     "inquirer": "8.2.4",
     "pinst": "3.0.0",

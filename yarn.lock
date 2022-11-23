@@ -285,6 +285,7 @@ __metadata:
     eslint-plugin-jsdoc: 39.3.6
     eslint-plugin-prefer-arrow: 1.2.3
     eslint-plugin-sonarjs: 0.16.0
+    excalibur: 0.25.3
     husky: 8.0.1
     inquirer: 8.2.4
     pinst: 3.0.0
@@ -293,6 +294,8 @@ __metadata:
     ts-node: 10.9.1
     tslib: 2.4.0
     typescript: 4.8.4
+  peerDependencies:
+    excalibur: ^0.25.0
   languageName: unknown
   linkType: soft
 
@@ -2236,6 +2239,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"core-js@npm:3.21.0":
+  version: 3.21.0
+  resolution: "core-js@npm:3.21.0"
+  checksum: 87df49aa2c5d0a521c52102b6669842dd30b334742e86dd4e0173c51230bc48d610060ab6de0f149766d188325b8c1b84598f901cf455674fe6c03ccc5c8026f
+  languageName: node
+  linkType: hard
+
 "core-util-is@npm:~1.0.0":
   version: 1.0.3
   resolution: "core-util-is@npm:1.0.3"
@@ -2979,6 +2989,15 @@ __metadata:
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: f6f487ad2198aa41d878fa31452f1a3c00958f46e9019286ff4787c84aac329332ab45c9cdc8c445928fc6d7ded294b9e005a7fce9426488518017831b272780
+  languageName: node
+  linkType: hard
+
+"excalibur@npm:0.25.3":
+  version: 0.25.3
+  resolution: "excalibur@npm:0.25.3"
+  dependencies:
+    core-js: 3.21.0
+  checksum: a09fadaffbc89fa8dd2c8967c800f483343cec209abd90481556353bc42e6748e7ae9287bf13636d82e5a2de4c3df15b5acae6dfdb8eef680977ff6e2ad192f9
   languageName: node
   linkType: hard
 
