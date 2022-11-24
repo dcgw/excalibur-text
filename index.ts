@@ -1,8 +1,6 @@
 import type {ExcaliburGraphicsContext, GraphicOptions} from "excalibur";
 import {BaseAlign, Color, FontStyle, Graphic, TextAlign, Vector} from "excalibur";
-import {notNull} from "@softwareventures/nullable";
-import {wrapText} from "./wrap";
-import {lookupBaseAlign, lookupFontStyle, lookupFontWeight, lookupTextAlign} from "./style";
+import {TextRenderer} from "./renderer";
 
 export interface TextOptions extends GraphicOptions {
     /**  The text to draw. */
@@ -135,6 +133,8 @@ export default class Text extends Graphic {
     /** Radius of the shadow blur in pixels. */
     public shadowBlurRadius: number;
 
+    private renderer: TextRenderer;
+
     public constructor(options: TextOptions) {
         super(options);
         this.text = options.text ?? "";
@@ -152,6 +152,23 @@ export default class Text extends Graphic {
         this.shadowColor = options.shadowColor ?? Color.Transparent;
         this.shadowOffset = options.shadowOffset ?? Vector.Zero;
         this.shadowBlurRadius = options.shadowBlurRadius ?? 0;
+        this.renderer = new TextRenderer(
+            this.text,
+            this.fontFamily,
+            this.fontStyle,
+            this.bold,
+            this.fontSize,
+            this.textAlign,
+            this.baseAlign,
+            this.lineHeight,
+            this.wrapWidth,
+            this.color,
+            this.outlineColor,
+            this.outlineWidth,
+            this.shadowColor,
+            this.shadowOffset,
+            this.shadowBlurRadius
+        );
     }
 
     public clone(): Text {
@@ -175,59 +192,23 @@ export default class Text extends Graphic {
     }
 
     protected _drawImage(ex: ExcaliburGraphicsContext, x: number, y: number): void {
-        const canvas = document.createElement("canvas");
-        const context = notNull(canvas.getContext("2d"));
-        const lineHeight = this.lineHeight ?? this.fontSize;
-
-        this.setCanvasTextProperties(context);
-        const wrappedLines = wrapText({
-            context,
-            text: this.text,
-            wrapWidth: this.wrapWidth,
-            fontSize: this.fontSize,
-            lineHeight
-        });
-
-        const {lines} = wrappedLines;
-        const left = wrappedLines.left + this.shadowBlurRadius * 2;
-        const right = wrappedLines.right + this.shadowBlurRadius * 2;
-        const top = wrappedLines.top + this.shadowBlurRadius * 2;
-        const bottom = wrappedLines.bottom + this.shadowBlurRadius * 2;
-
-        canvas.width = left + right;
-        canvas.height = top + bottom;
-
-        this.setCanvasTextProperties(context);
-        context.translate(left, top);
-
-        lines.forEach((line, i) => void context.strokeText(line, 0, i * lineHeight));
-        lines.forEach((line, i) => void context.fillText(line, 0, i * lineHeight));
-
-        if (this.shadowColor.a === 0) {
-            ex.drawImage(canvas, x - left, y - top);
-        } else {
-            const canvas2 = document.createElement("canvas");
-            canvas2.width = canvas.width;
-            canvas2.height = canvas.height;
-            const context2 = notNull(canvas2.getContext("2d"));
-            context2.shadowBlur = this.shadowBlurRadius;
-            context2.shadowColor = this.shadowColor.toString();
-            context2.shadowOffsetX = this.shadowOffset.x;
-            context2.shadowOffsetY = this.shadowOffset.y;
-            context2.drawImage(canvas, 0, 0);
-            ex.drawImage(canvas2, x - left, y - top);
-        }
-    }
-
-    private setCanvasTextProperties(context: CanvasRenderingContext2D): void {
-        context.textAlign = lookupTextAlign(this.textAlign);
-        context.textBaseline = lookupBaseAlign(this.baseAlign);
-        context.font = `${lookupFontStyle(this.fontStyle)} ${lookupFontWeight(this.bold)} ${
-            this.fontSize
-        }px ${this.fontFamily}`;
-        context.lineWidth = this.outlineWidth * 2;
-        context.strokeStyle =
-            this.outlineWidth === 0 ? "transparent" : this.outlineColor.toString();
-        context.fillStyle = this.color.toString();
+        this.renderer = this.renderer.updateIfRequired(
+            this.text,
+            this.fontFamily,
+            this.fontStyle,
+            this.bold,
+            this.fontSize,
+            this.textAlign,
+            this.baseAlign,
+            this.lineHeight,
+            this.wrapWidth,
+            this.color,
+            this.outlineColor,
+            this.outlineWidth,
+            this.shadowColor,
+            this.shadowOffset,
+            this.shadowBlurRadius
+        );
+        this.renderer.renderImage(ex, x, y);
     }
 }
