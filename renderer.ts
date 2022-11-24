@@ -119,19 +119,37 @@ export class TextRenderer {
                     top
                 };
             } else {
-                canvas.width = canvas2.width + this.shadowBlurRadius * 4;
-                canvas.height = canvas2.height + this.shadowBlurRadius * 4;
+                const shadowCompositeLeft = Math.max(
+                    0,
+                    Math.trunc(this.shadowBlurRadius * 2 - this.shadowOffset.x) + 1
+                );
+                const shadowCompositeTop = Math.max(
+                    0,
+                    Math.trunc(this.shadowBlurRadius * 2 - this.shadowOffset.y) + 1
+                );
+
+                const shadowLeft = left + shadowCompositeLeft;
+                const shadowRight =
+                    right +
+                    Math.max(0, Math.trunc(this.shadowBlurRadius * 2 + this.shadowOffset.x) + 1);
+                const shadowTop = top + shadowCompositeTop;
+                const shadowBottom =
+                    bottom +
+                    Math.max(0, Math.trunc(this.shadowBlurRadius * 2 + this.shadowOffset.y) + 1);
+
+                canvas.width = shadowLeft + shadowRight;
+                canvas.height = shadowTop + shadowBottom;
                 context.shadowBlur = this.shadowBlurRadius;
                 context.shadowColor = this.shadowColor.toString();
                 context.shadowOffsetX = this.shadowOffset.x;
                 context.shadowOffsetY = this.shadowOffset.y;
-                context.translate(this.shadowBlurRadius * 2, this.shadowBlurRadius * 2);
+                context.translate(shadowCompositeLeft, shadowCompositeTop);
                 context.drawImage(canvas2, 0, 0);
 
                 this.cache = {
                     canvas,
-                    left: left + this.shadowBlurRadius * 2,
-                    top: top + this.shadowBlurRadius * 2
+                    left: shadowLeft,
+                    top: shadowTop
                 };
             }
         }
