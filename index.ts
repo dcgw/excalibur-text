@@ -1,4 +1,4 @@
-import type {ExcaliburGraphicsContext, GraphicOptions} from "excalibur";
+import type {ExcaliburGraphicsContext, GraphicOptions, BoundingBox} from "excalibur";
 import {BaseAlign, Color, FontStyle, Graphic, TextAlign, Vector} from "excalibur";
 import {TextRenderer} from "./renderer";
 
@@ -169,6 +169,10 @@ export default class Text extends Graphic {
             this.shadowOffset,
             this.shadowBlurRadius
         );
+    }
+
+    public override get localBounds(): BoundingBox {
+        return this.renderer.localBounds.scale(this.scale);
     }
 
     public clone(): Text {

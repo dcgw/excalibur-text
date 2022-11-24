@@ -7,15 +7,12 @@ import type {
     Vector
 } from "excalibur";
 import {notNull} from "@softwareventures/nullable";
+import {BoundingBox} from "excalibur";
 import {lookupBaseAlign, lookupFontStyle, lookupFontWeight, lookupTextAlign} from "./style";
 import {wrapText} from "./wrap";
 
 export class TextRenderer {
-    private cache: {
-        readonly canvas: HTMLCanvasElement;
-        readonly left: number;
-        readonly top: number;
-    } | null = null;
+    private cache: Cache | null = null;
 
     public constructor(
         private readonly text: string,
@@ -34,6 +31,10 @@ export class TextRenderer {
         private readonly shadowOffset: Vector,
         private readonly shadowBlurRadius: number
     ) {}
+
+    public get localBounds(): BoundingBox {
+        return this.updateCache().bounds;
+    }
 
     public updateIfRequired(
         text: string,
@@ -88,6 +89,11 @@ export class TextRenderer {
     }
 
     public renderImage(ex: ExcaliburGraphicsContext, x: number, y: number): void {
+        const cache = this.updateCache();
+        ex.drawImage(cache.canvas, x + cache.bounds.left, y + cache.bounds.top);
+    }
+
+    private updateCache(): Cache {
         if (this.cache == null) {
             const canvas = document.createElement("canvas");
             const context = notNull(canvas.getContext("2d"));
@@ -115,8 +121,12 @@ export class TextRenderer {
             if (canvas === canvas2) {
                 this.cache = {
                     canvas,
-                    left,
-                    top
+                    bounds: new BoundingBox({
+                        left: -left,
+                        right,
+                        top: -top,
+                        bottom
+                    })
                 };
             } else {
                 const shadowCompositeLeft = Math.max(
@@ -148,13 +158,17 @@ export class TextRenderer {
 
                 this.cache = {
                     canvas,
-                    left: shadowLeft,
-                    top: shadowTop
+                    bounds: new BoundingBox({
+                        left: -shadowLeft,
+                        right: shadowRight,
+                        top: -shadowTop,
+                        bottom: shadowBottom
+                    })
                 };
             }
         }
 
-        ex.drawImage(this.cache.canvas, x - this.cache.left, y - this.cache.top);
+        return this.cache;
     }
 
     private setCanvasTextProperties(context: CanvasRenderingContext2D): void {
@@ -168,4 +182,9 @@ export class TextRenderer {
             this.outlineWidth === 0 ? "transparent" : this.outlineColor.toString();
         context.fillStyle = this.color.toString();
     }
+}
+
+interface Cache {
+    readonly canvas: HTMLCanvasElement;
+    readonly bounds: BoundingBox;
 }
