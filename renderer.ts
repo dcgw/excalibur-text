@@ -99,13 +99,18 @@ export class TextRenderer {
             const context = notNull(canvas.getContext("2d"));
             this.setCanvasTextProperties(context);
             const lineHeight = this.lineHeight ?? this.fontSize;
-            const {lines, left, right, top, bottom} = wrapText({
+            const wrappedText = wrapText({
                 context,
                 text: this.text,
                 wrapWidth: this.wrapWidth,
                 fontSize: this.fontSize,
                 lineHeight
             });
+            const lines = wrappedText.lines;
+            const left = wrappedText.left + Math.max(0, Math.ceil(this.outlineWidth));
+            const right = wrappedText.right + Math.max(0, Math.ceil(this.outlineWidth));
+            const top = wrappedText.top + Math.max(0, Math.ceil(this.outlineWidth));
+            const bottom = wrappedText.bottom + Math.max(0, Math.ceil(this.outlineWidth));
 
             const canvas2 = this.shadowColor.a === 0 ? canvas : document.createElement("canvas");
             canvas2.width = left + right;
