@@ -36,10 +36,10 @@ function measureLine(options: MeasureLineOptions): LineMetrics {
         };
     } else {
         return {
-            left: Math.trunc(metrics.actualBoundingBoxLeft),
-            right: Math.trunc(metrics.actualBoundingBoxRight),
-            top: Math.trunc(metrics.actualBoundingBoxAscent),
-            bottom: Math.trunc(metrics.actualBoundingBoxDescent),
+            left: Math.trunc(metrics.actualBoundingBoxLeft) + 1,
+            right: Math.trunc(metrics.actualBoundingBoxRight) + 1,
+            top: Math.trunc(metrics.actualBoundingBoxAscent) + 1,
+            bottom: Math.trunc(metrics.actualBoundingBoxDescent) + 1,
             width: metrics.width
         };
     }
