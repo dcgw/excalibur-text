@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "@dcgw/excalibur-text",
   "version": "0.0.0-development",
   "description": "Alternative text Graphic for Excalibur",
@@ -84,5 +83,8 @@
   "release": {
     "extends": "@softwareventures/semantic-release-config"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "publishConfig": {
+    "access": "public"
+  }
 }
