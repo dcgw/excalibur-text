@@ -295,7 +295,7 @@ __metadata:
     prettier: 2.7.1
     semantic-release: 19.0.5
     ts-node: 10.9.1
-    tslib: 2.4.0
+    tslib: 2.4.1
     typescript: 4.8.4
   peerDependencies:
     excalibur: ^0.25.0 || ^0.26.0 || ^0.27.0
