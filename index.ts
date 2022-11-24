@@ -2,6 +2,7 @@ import type {ExcaliburGraphicsContext, GraphicOptions} from "excalibur";
 import {BaseAlign, Color, FontStyle, Graphic, TextAlign, Vector} from "excalibur";
 import {notNull} from "@softwareventures/nullable";
 import {wrapText} from "./wrap";
+import {lookupBaseAlign, lookupFontStyle, lookupFontWeight, lookupTextAlign} from "./style";
 
 export interface TextOptions extends GraphicOptions {
     /**  The text to draw. */
@@ -229,51 +230,4 @@ export default class Text extends Graphic {
             this.outlineWidth === 0 ? "transparent" : this.outlineColor.toString();
         context.fillStyle = this.color.toString();
     }
-}
-
-function lookupTextAlign(textAlign: TextAlign): CanvasTextAlign {
-    switch (textAlign) {
-        case TextAlign.Left:
-            return "left";
-        case TextAlign.Right:
-            return "right";
-        case TextAlign.Center:
-            return "center";
-        case TextAlign.End:
-            return "end";
-        case TextAlign.Start:
-            return "start";
-    }
-}
-
-function lookupBaseAlign(baseAlign: BaseAlign): CanvasTextBaseline {
-    switch (baseAlign) {
-        case BaseAlign.Alphabetic:
-            return "alphabetic";
-        case BaseAlign.Bottom:
-            return "bottom";
-        case BaseAlign.Hanging:
-            return "hanging";
-        case BaseAlign.Ideographic:
-            return "ideographic";
-        case BaseAlign.Middle:
-            return "middle";
-        case BaseAlign.Top:
-            return "top";
-    }
-}
-
-function lookupFontStyle(fontStyle: FontStyle): string {
-    switch (fontStyle) {
-        case FontStyle.Italic:
-            return "italic";
-        case FontStyle.Normal:
-            return "normal";
-        case FontStyle.Oblique:
-            return "oblique";
-    }
-}
-
-function lookupFontWeight(bold: boolean): string {
-    return bold ? "bold" : "normal";
 }
