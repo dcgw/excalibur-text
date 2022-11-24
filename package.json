@@ -54,7 +54,7 @@
     "eslint-plugin-prefer-arrow": "1.2.3",
     "eslint-plugin-sonarjs": "0.16.0",
     "excalibur": "0.25.3",
-    "husky": "8.0.1",
+    "husky": "8.0.2",
     "inquirer": "8.2.4",
     "pinst": "3.0.0",
     "prettier": "2.7.1",
