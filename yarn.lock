@@ -39,23 +39,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:17.1.2":
-  version: 17.1.2
-  resolution: "@commitlint/cli@npm:17.1.2"
+"@commitlint/cli@npm:17.3.0":
+  version: 17.3.0
+  resolution: "@commitlint/cli@npm:17.3.0"
   dependencies:
     "@commitlint/format": ^17.0.0
-    "@commitlint/lint": ^17.1.0
-    "@commitlint/load": ^17.1.2
-    "@commitlint/read": ^17.1.0
+    "@commitlint/lint": ^17.3.0
+    "@commitlint/load": ^17.3.0
+    "@commitlint/read": ^17.2.0
     "@commitlint/types": ^17.0.0
     execa: ^5.0.0
-    lodash: ^4.17.19
+    lodash.isfunction: ^3.0.9
     resolve-from: 5.0.0
     resolve-global: 1.0.0
     yargs: ^17.0.0
   bin:
     commitlint: cli.js
-  checksum: 2f87c560ede9c731574ceb3a4be0d4a12fed60aedef57a567a98b978537105da0aa70d189803f7894ee7a079038f63ee45345ebd29e9d29789d9fdf4c64006d4
+  checksum: 9f544ea528198bbb8ee00c54dc68a4933c680bd6e995817b7acabe3352835ee77b7c86f522a0bb749684422d469365fdc86c134012c9b1c0af42a2e1ed3b342c
   languageName: node
   linkType: hard
 
@@ -136,7 +136,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/lint@npm:^17.1.0":
+"@commitlint/lint@npm:^17.3.0":
   version: 17.3.0
   resolution: "@commitlint/lint@npm:17.3.0"
   dependencies:
@@ -148,7 +148,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^17.1.2":
+"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^17.1.2, @commitlint/load@npm:^17.3.0":
   version: 17.3.0
   resolution: "@commitlint/load@npm:17.3.0"
   dependencies:
@@ -188,7 +188,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/read@npm:^17.1.0":
+"@commitlint/read@npm:^17.2.0":
   version: 17.2.0
   resolution: "@commitlint/read@npm:17.2.0"
   dependencies:
@@ -266,7 +266,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dcgw/excalibur-text@workspace:."
   dependencies:
-    "@commitlint/cli": 17.1.2
+    "@commitlint/cli": 17.3.0
     "@commitlint/config-conventional": 17.1.0
     "@commitlint/cz-commitlint": 17.1.2
     "@softwareventures/chain": ^2.0.2
@@ -4618,6 +4618,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.isfunction@npm:^3.0.9":
+  version: 3.0.9
+  resolution: "lodash.isfunction@npm:3.0.9"
+  checksum: 99e54c34b1e8a9ba75c034deb39cedbd2aca7af685815e67a2a8ec4f73ec9748cda6ebee5a07d7de4b938e90d421fd280e9c385cc190f903ac217ac8aff30314
+  languageName: node
+  linkType: hard
+
 "lodash.ismatch@npm:^4.4.0":
   version: 4.4.0
   resolution: "lodash.ismatch@npm:4.4.0"
@@ -4702,7 +4709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:4.17.21, lodash@npm:^4.17.15, lodash@npm:^4.17.19, lodash@npm:^4.17.21, lodash@npm:^4.17.4":
+"lodash@npm:4.17.21, lodash@npm:^4.17.15, lodash@npm:^4.17.21, lodash@npm:^4.17.4":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
