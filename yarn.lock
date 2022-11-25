@@ -273,7 +273,7 @@ __metadata:
     "@softwareventures/eslint-config": 7.1.0
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
-    "@softwareventures/precise-commits": 3.0.5
+    "@softwareventures/precise-commits": 3.0.6
     "@softwareventures/prettier-config": 4.0.0
     "@softwareventures/semantic-release-config": 3.1.0
     "@softwareventures/tsconfig": 7.0.0
@@ -900,12 +900,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/nullable@npm:3.0.0, @softwareventures/nullable@npm:^1.0.0 || ^1.2.1 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^1.0.0 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@softwareventures/nullable@npm:3.0.0"
+"@softwareventures/nullable@npm:3.1.0, @softwareventures/nullable@npm:^1.0.0 || ^1.2.1 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^1.0.0 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^3.0.0":
+  version: 3.1.0
+  resolution: "@softwareventures/nullable@npm:3.1.0"
   dependencies:
-    tslib: 2.4.0
-  checksum: 19775dce03995984daef0a8c6b81b4e9f8f9ab770d6b09d815968b9ac2be368a2f144aa68201b002652880ce3587de3a8267f457882682abe8e34629745f2df8
+    tslib: 2.4.1
+  checksum: 04ba15dbbfa2e64f35a3a4bc62b0ed01da9cd57871240f355e15b54834bbb8873db00748f05dda14f9e320f638cee97ec6b801177d0a812bac12be8ab2272424
   languageName: node
   linkType: hard
 
@@ -918,12 +918,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/precise-commits@npm:3.0.5":
-  version: 3.0.5
-  resolution: "@softwareventures/precise-commits@npm:3.0.5"
+"@softwareventures/precise-commits@npm:3.0.6":
+  version: 3.0.6
+  resolution: "@softwareventures/precise-commits@npm:3.0.6"
   dependencies:
     "@softwareventures/array": 6.0.3
-    "@softwareventures/nullable": 3.0.0
+    "@softwareventures/nullable": 3.1.0
     execa: 5.1.1
     find-up: 5.0.0
     glob: 8.0.3
@@ -936,7 +936,7 @@ __metadata:
     prettier: ">=1.8.0"
   bin:
     precise-commits: lib/cli.js
-  checksum: 5a19a8499c69429ee6947bf7283244da4404680a0ed54d0085a3b5eba5406d26a429995813dc3984f0a9d6da6a6533e8b5513f6e381da4d3df215b73b3d6791d
+  checksum: c452be6b900947a9fb0ca1b125c1e72459dfecb03381568469fab64a07f44e1b13a07bb54b9b88c8c54fde1aaceb0293e53ccc4dbf3a1d5d1addc0136a6a928d
   languageName: node
   linkType: hard
 
