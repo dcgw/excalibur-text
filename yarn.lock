@@ -78,24 +78,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cz-commitlint@npm:17.3.0":
-  version: 17.3.0
-  resolution: "@commitlint/cz-commitlint@npm:17.3.0"
+"@commitlint/cz-commitlint@npm:17.4.0":
+  version: 17.4.0
+  resolution: "@commitlint/cz-commitlint@npm:17.4.0"
   dependencies:
-    "@commitlint/ensure": ^17.3.0
-    "@commitlint/load": ^17.3.0
-    "@commitlint/types": ^17.0.0
+    "@commitlint/ensure": ^17.4.0
+    "@commitlint/load": ^17.4.0
+    "@commitlint/types": ^17.4.0
     chalk: ^4.1.0
     lodash.isplainobject: ^4.0.6
     word-wrap: ^1.2.3
   peerDependencies:
     commitizen: ^4.0.3
     inquirer: ^8.0.0
-  checksum: 5d2b3790f7e204e47f5fdaa982831d91fd325a9bd743cff0c5adfa1976e61c3b3d404786d4c287dd873e8390be2e6add7a2b6598f43491cf1f0bf05758345b43
+  checksum: fa5dedfeb7201b913454dc79af0465863f1e4f611c7dd7d23b7bd70b50c34e64b78a88495980b8073cdf382127dcca7b4f0d7fcc519619146c062cceb795f83d
   languageName: node
   linkType: hard
 
-"@commitlint/ensure@npm:^17.3.0, @commitlint/ensure@npm:^17.4.0":
+"@commitlint/ensure@npm:^17.4.0":
   version: 17.4.0
   resolution: "@commitlint/ensure@npm:17.4.0"
   dependencies:
@@ -148,7 +148,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^17.3.0, @commitlint/load@npm:^17.4.0":
+"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^17.4.0":
   version: 17.4.0
   resolution: "@commitlint/load@npm:17.4.0"
   dependencies:
@@ -243,7 +243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/types@npm:^17.0.0, @commitlint/types@npm:^17.4.0":
+"@commitlint/types@npm:^17.4.0":
   version: 17.4.0
   resolution: "@commitlint/types@npm:17.4.0"
   dependencies:
@@ -267,7 +267,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 17.4.0
     "@commitlint/config-conventional": 17.4.0
-    "@commitlint/cz-commitlint": 17.3.0
+    "@commitlint/cz-commitlint": 17.4.0
     "@softwareventures/chain": ^2.0.2
     "@softwareventures/eslint-config": 7.1.0
     "@softwareventures/iterable": ^3.2.0
