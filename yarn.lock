@@ -78,12 +78,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cz-commitlint@npm:17.4.0":
-  version: 17.4.0
-  resolution: "@commitlint/cz-commitlint@npm:17.4.0"
+"@commitlint/cz-commitlint@npm:17.4.1":
+  version: 17.4.1
+  resolution: "@commitlint/cz-commitlint@npm:17.4.1"
   dependencies:
     "@commitlint/ensure": ^17.4.0
-    "@commitlint/load": ^17.4.0
+    "@commitlint/load": ^17.4.1
     "@commitlint/types": ^17.4.0
     chalk: ^4.1.0
     lodash.isplainobject: ^4.0.6
@@ -91,7 +91,7 @@ __metadata:
   peerDependencies:
     commitizen: ^4.0.3
     inquirer: ^8.0.0
-  checksum: fa5dedfeb7201b913454dc79af0465863f1e4f611c7dd7d23b7bd70b50c34e64b78a88495980b8073cdf382127dcca7b4f0d7fcc519619146c062cceb795f83d
+  checksum: d89c667c3f8906c6491fbd4d3034fa3bbcb01bcad141ddab40c280ea37b1d8aadae03a7559cc5b8c485d0acf8acd7c39aca00fcab7a81047e74c32efd7efb461
   languageName: node
   linkType: hard
 
@@ -148,7 +148,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^17.4.0, @commitlint/load@npm:^17.4.1":
+"@commitlint/load@npm:>6.1.1, @commitlint/load@npm:^17.4.1":
   version: 17.4.1
   resolution: "@commitlint/load@npm:17.4.1"
   dependencies:
@@ -268,7 +268,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": 17.4.1
     "@commitlint/config-conventional": 17.4.0
-    "@commitlint/cz-commitlint": 17.4.0
+    "@commitlint/cz-commitlint": 17.4.1
     "@softwareventures/chain": ^2.0.2
     "@softwareventures/eslint-config": 7.1.0
     "@softwareventures/iterable": ^3.2.0
