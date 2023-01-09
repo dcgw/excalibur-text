@@ -34,7 +34,7 @@
     "excalibur": "^0.25.0 || ^0.26.0 || ^0.27.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.0",
+    "@commitlint/cli": "17.4.1",
     "@commitlint/config-conventional": "17.4.0",
     "@commitlint/cz-commitlint": "17.4.0",
     "@softwareventures/eslint-config": "7.1.0",
