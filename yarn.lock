@@ -273,7 +273,7 @@ __metadata:
     "@softwareventures/eslint-config": 7.1.1
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
-    "@softwareventures/precise-commits": 3.0.13
+    "@softwareventures/precise-commits": 3.0.14
     "@softwareventures/prettier-config": 4.0.0
     "@softwareventures/semantic-release-config": 3.1.0
     "@softwareventures/tsconfig": 7.0.0
@@ -968,9 +968,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/precise-commits@npm:3.0.13":
-  version: 3.0.13
-  resolution: "@softwareventures/precise-commits@npm:3.0.13"
+"@softwareventures/precise-commits@npm:3.0.14":
+  version: 3.0.14
+  resolution: "@softwareventures/precise-commits@npm:3.0.14"
   dependencies:
     "@softwareventures/array": 6.0.3
     "@softwareventures/nullable": 3.1.0
@@ -986,7 +986,7 @@ __metadata:
     prettier: ">=1.8.0"
   bin:
     precise-commits: lib/cli.js
-  checksum: d8409ba50c460aaba75fac7d31daab739d856996d907abce3ef87a254960aef6bd18ef55d62f253b06edbe201259a61cf7c221895ae65930598992b56ec4cbbb
+  checksum: 405e40f306ac0e5d737b036efc366e811607f015fc70ce2b033f019fe5b7447f1dc7ab9bc554493422aebdaee1473b866a4a6254627b9d6156978779b2b54191
   languageName: node
   linkType: hard
 
