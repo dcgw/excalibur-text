@@ -273,7 +273,7 @@ __metadata:
     "@softwareventures/eslint-config": 7.1.1
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
-    "@softwareventures/precise-commits": 3.0.15
+    "@softwareventures/precise-commits": 3.0.16
     "@softwareventures/prettier-config": 4.0.0
     "@softwareventures/semantic-release-config": 3.1.0
     "@softwareventures/tsconfig": 7.0.0
@@ -998,9 +998,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/precise-commits@npm:3.0.15":
-  version: 3.0.15
-  resolution: "@softwareventures/precise-commits@npm:3.0.15"
+"@softwareventures/precise-commits@npm:3.0.16":
+  version: 3.0.16
+  resolution: "@softwareventures/precise-commits@npm:3.0.16"
   dependencies:
     "@softwareventures/array": 6.0.3
     "@softwareventures/nullable": 3.1.0
@@ -1010,13 +1010,13 @@ __metadata:
     ignore: 5.2.1
     mri: 1.2.0
     ora: 5.4.1
-    tslib: 2.5.3
+    tslib: 2.6.0
     unknown: 0.2.5
   peerDependencies:
     prettier: ">=1.8.0"
   bin:
     precise-commits: lib/cli.js
-  checksum: 027b70cdccd9d27d4db9661e6a8f7d458232b25466ac5cf3209e8fbfb20e44175bdd49ab599b0df0303c5f706c42f33f05f23deab776586be19e464e74a5f023
+  checksum: d84955fbc689081a4cbfac2a2f332c9ffccb3af4f6f3f97cab9cb8c16663ecd105295557ddfc67bfb08a021106009ed61470059e15d2dee1476cb59ee14f6655
   languageName: node
   linkType: hard
 
@@ -7476,13 +7476,6 @@ __metadata:
   version: 2.5.0
   resolution: "tslib@npm:2.5.0"
   checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1
-  languageName: node
-  linkType: hard
-
-"tslib@npm:2.5.3":
-  version: 2.5.3
-  resolution: "tslib@npm:2.5.3"
-  checksum: 88902b309afaf83259131c1e13da1dceb0ad1682a213143a1346a649143924d78cf3760c448b84d796938fd76127183894f8d85cbb3bf9c4fddbfcc140c0003c
   languageName: node
   linkType: hard
 
