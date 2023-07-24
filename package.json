@@ -28,7 +28,7 @@
     "@softwareventures/chain": "^2.0.2",
     "@softwareventures/iterable": "^3.2.0",
     "@softwareventures/nullable": "^3.0.0",
-    "tslib": "2.6.0"
+    "tslib": "2.6.1"
   },
   "peerDependencies": {
     "excalibur": "^0.25.0 || ^0.26.0 || ^0.27.0"
