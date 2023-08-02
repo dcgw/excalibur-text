@@ -55,7 +55,7 @@
     "eslint-plugin-sonarjs": "0.19.0",
     "excalibur": "0.27.0",
     "husky": "8.0.3",
-    "inquirer": "8.2.5",
+    "inquirer": "8.2.6",
     "pinst": "3.0.0",
     "prettier": "2.8.8",
     "semantic-release": "19.0.5",
