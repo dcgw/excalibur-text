@@ -333,9 +333,9 @@ __metadata:
   linkType: hard
 
 "@eslint-community/regexpp@npm:^4.4.0, @eslint-community/regexpp@npm:^4.6.1":
-  version: 4.6.2
-  resolution: "@eslint-community/regexpp@npm:4.6.2"
-  checksum: a3c341377b46b54fa228f455771b901d1a2717f95d47dcdf40199df30abc000ba020f747f114f08560d119e979d882a94cf46cfc51744544d54b00319c0f2724
+  version: 4.8.0
+  resolution: "@eslint-community/regexpp@npm:4.8.0"
+  checksum: 601e6d033d556e98e8c929905bef335f20d7389762812df4d0f709d9b4d2631610dda975fb272e23b5b68e24a163b3851b114c8080a0a19fb4c141a1eff6305b
   languageName: node
   linkType: hard
 
@@ -3394,16 +3394,17 @@ __metadata:
   linkType: hard
 
 "flat-cache@npm:^3.0.4":
-  version: 3.0.4
-  resolution: "flat-cache@npm:3.0.4"
+  version: 3.1.0
+  resolution: "flat-cache@npm:3.1.0"
   dependencies:
-    flatted: ^3.1.0
+    flatted: ^3.2.7
+    keyv: ^4.5.3
     rimraf: ^3.0.2
-  checksum: 4fdd10ecbcbf7d520f9040dd1340eb5dfe951e6f0ecf2252edeec03ee68d989ec8b9a20f4434270e71bcfd57800dc09b3344fca3966b2eb8f613072c7d9a2365
+  checksum: 99312601d5b90f44aef403f17f056dc09be7e437703740b166cdc9386d99e681f74e6b6e8bd7d010bda66904ea643c9527276b1b80308a2119741d94108a4d8f
   languageName: node
   linkType: hard
 
-"flatted@npm:^3.1.0":
+"flatted@npm:^3.2.7":
   version: 3.2.7
   resolution: "flatted@npm:3.2.7"
   checksum: 427633049d55bdb80201c68f7eb1cbd533e03eac541f97d3aecab8c5526f12a20ccecaeede08b57503e772c769e7f8680b37e8d482d1e5f8d7e2194687f9ea35
@@ -3495,18 +3496,18 @@ __metadata:
   linkType: hard
 
 "fsevents@npm:~2.3.2":
-  version: 2.3.2
-  resolution: "fsevents@npm:2.3.2"
+  version: 2.3.3
+  resolution: "fsevents@npm:2.3.3"
   dependencies:
     node-gyp: latest
-  checksum: 97ade64e75091afee5265e6956cb72ba34db7819b4c3e94c431d4be2b19b8bb7a2d4116da417950c3425f17c8fe693d25e20212cac583ac1521ad066b77ae31f
+  checksum: 11e6ea6fea15e42461fc55b4b0e4a0a3c654faa567f1877dbd353f39156f69def97a69936d1746619d656c4b93de2238bf731f6085a03a50cabf287c9d024317
   conditions: os=darwin
   languageName: node
   linkType: hard
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
-  version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  version: 2.3.3
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -4636,6 +4637,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-buffer@npm:3.0.1":
+  version: 3.0.1
+  resolution: "json-buffer@npm:3.0.1"
+  checksum: 9026b03edc2847eefa2e37646c579300a1f3a4586cfb62bf857832b60c852042d0d6ae55d1afb8926163fa54c2b01d83ae24705f34990348bdac6273a29d4581
+  languageName: node
+  linkType: hard
+
 "json-parse-better-errors@npm:^1.0.1":
   version: 1.0.2
   resolution: "json-parse-better-errors@npm:1.0.2"
@@ -4727,6 +4735,15 @@ __metadata:
   version: 5.2.0
   resolution: "just-diff@npm:5.2.0"
   checksum: 5527fb6d28a446185250fba501ad857370c049bac7aa5a34c9ec82a45e1380af1a96137be7df2f87252d9f75ef67be41d4c0267d481ed0235b2ceb3ee1f5f75d
+  languageName: node
+  linkType: hard
+
+"keyv@npm:^4.5.3":
+  version: 4.5.3
+  resolution: "keyv@npm:4.5.3"
+  dependencies:
+    json-buffer: 3.0.1
+  checksum: 3ffb4d5b72b6b4b4af443bbb75ca2526b23c750fccb5ac4c267c6116888b4b65681015c2833cb20d26cf3e6e32dac6b988c77f7f022e1a571b7d90f1442257da
   languageName: node
   linkType: hard
 
@@ -5575,8 +5592,8 @@ __metadata:
   linkType: hard
 
 "node-fetch@npm:^2.6.7":
-  version: 2.6.13
-  resolution: "node-fetch@npm:2.6.13"
+  version: 2.7.0
+  resolution: "node-fetch@npm:2.7.0"
   dependencies:
     whatwg-url: ^5.0.0
   peerDependencies:
@@ -5584,7 +5601,7 @@ __metadata:
   peerDependenciesMeta:
     encoding:
       optional: true
-  checksum: 055845ae5b4796c78c7053564745345025cf959563b3568b43c385f67d311779e6b00e5fef6ed1b79f86ba4048e4b4b722e1aa948305521b9353eb7e788912c9
+  checksum: d76d2f5edb451a3f05b15115ec89fc6be39de37c6089f1b6368df03b91e1633fd379a7e01b7ab05089a25034b2023d959b47e59759cb38d88341b2459e89d6e5
   languageName: node
   linkType: hard
 
@@ -7733,12 +7750,12 @@ __metadata:
   linkType: hard
 
 "typescript@npm:^4.6.4 || ^5.0.0":
-  version: 5.1.6
-  resolution: "typescript@npm:5.1.6"
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b2f2c35096035fe1f5facd1e38922ccb8558996331405eb00a5111cc948b2e733163cc22fab5db46992aba7dd520fff637f2c1df4996ff0e134e77d3249a7350
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
@@ -7753,12 +7770,12 @@ __metadata:
   linkType: hard
 
 "typescript@patch:typescript@^4.6.4 || ^5.0.0#~builtin<compat/typescript>":
-  version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
+  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
   languageName: node
   linkType: hard
 
