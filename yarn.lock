@@ -278,7 +278,7 @@ __metadata:
     "@commitlint/config-conventional": 17.8.1
     "@commitlint/cz-commitlint": 17.8.1
     "@softwareventures/chain": ^2.0.2
-    "@softwareventures/eslint-config": 7.1.4
+    "@softwareventures/eslint-config": 7.1.5
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
     "@softwareventures/precise-commits": 3.0.32
@@ -958,9 +958,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/eslint-config@npm:7.1.4":
-  version: 7.1.4
-  resolution: "@softwareventures/eslint-config@npm:7.1.4"
+"@softwareventures/eslint-config@npm:7.1.5":
+  version: 7.1.5
+  resolution: "@softwareventures/eslint-config@npm:7.1.5"
   dependencies:
     tslib: ^2.3.1
   peerDependencies:
@@ -969,11 +969,11 @@ __metadata:
     eslint: ^7.0.0 || ^8.0.0
     eslint-config-prettier: ^8.3.0 || ^9.0.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jsdoc: ^37.0.3 || ^38.0.0 || ^39.0.0 || ^40.0.0 || ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 || ^46.0.0
+    eslint-plugin-jsdoc: ^37.0.3 || ^38.0.0 || ^39.0.0 || ^40.0.0 || ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 || ^46.0.0 || ^47.0.0 || ^48.0.0
     eslint-plugin-prefer-arrow: ^1.2.3
     eslint-plugin-sonarjs: ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0
     typescript: ^3.8.3 || ^4.0.0 || ^5.0.0
-  checksum: c95bc7530defbd9273a23cac7166a40effe710e5a1d4e39b8fa741ea02ef281b64e4586d9360a5af1bef2ec89e1cb2a75e1f265131b7782704aff09dcb51e2dc
+  checksum: cfec69e2d24143f6d8eebc39271719642fa0d0ee3e6fecf0425c825c40c2781b0678a70a9d35ed3281e7a68e003d89b211c13a9639cc1f100df1399a7c3ad62c
   languageName: node
   linkType: hard
 
