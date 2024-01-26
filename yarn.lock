@@ -281,7 +281,7 @@ __metadata:
     "@softwareventures/eslint-config": 7.1.5
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
-    "@softwareventures/precise-commits": 3.0.32
+    "@softwareventures/precise-commits": 3.0.33
     "@softwareventures/prettier-config": 4.0.0
     "@softwareventures/semantic-release-config": 3.1.0
     "@softwareventures/tsconfig": 7.1.0
@@ -988,12 +988,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/nullable@npm:3.1.0, @softwareventures/nullable@npm:^1.0.0 || ^1.2.1 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^1.0.0 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "@softwareventures/nullable@npm:3.1.0"
+"@softwareventures/nullable@npm:3.2.0, @softwareventures/nullable@npm:^1.0.0 || ^1.2.1 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^1.0.0 || ^2.0.0 || ^3.0.0, @softwareventures/nullable@npm:^3.0.0":
+  version: 3.2.0
+  resolution: "@softwareventures/nullable@npm:3.2.0"
   dependencies:
-    tslib: 2.4.1
-  checksum: 04ba15dbbfa2e64f35a3a4bc62b0ed01da9cd57871240f355e15b54834bbb8873db00748f05dda14f9e320f638cee97ec6b801177d0a812bac12be8ab2272424
+    tslib: 2.6.2
+  checksum: b97f6400d15add88e64d2c8faf8dc864559bb47c0268a7f0eac9f45a8d32da32fe5199e5cb9cfec7f65d3c5fd983892f94c01e8b70a079aa14575b5716071892
   languageName: node
   linkType: hard
 
@@ -1006,12 +1006,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/precise-commits@npm:3.0.32":
-  version: 3.0.32
-  resolution: "@softwareventures/precise-commits@npm:3.0.32"
+"@softwareventures/precise-commits@npm:3.0.33":
+  version: 3.0.33
+  resolution: "@softwareventures/precise-commits@npm:3.0.33"
   dependencies:
     "@softwareventures/array": 6.1.0
-    "@softwareventures/nullable": 3.1.0
+    "@softwareventures/nullable": 3.2.0
     execa: 5.1.1
     find-up: 5.0.0
     glob: 8.1.0
@@ -1025,7 +1025,7 @@ __metadata:
     prettier: ^1.8.0 || ^2.0.0
   bin:
     precise-commits: lib/cli.js
-  checksum: 6589725910c12bd4ae2c287e7bd5728fb8424ed9afdc667f3781c856da190bd2ab00303e8f2c14dbddea03e1371f291c0a0826c432343f6e00f7ce8ca28d5c15
+  checksum: d742c9ef6aa876cb9c5d028471d0de09bed305feb3561aa1b65268690291e6adc8c7bc0df91231b40ed56a5181cfef0b2852d28a1d75de307175c6e733eea5c5
   languageName: node
   linkType: hard
 
