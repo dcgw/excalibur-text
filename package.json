@@ -34,9 +34,9 @@
     "excalibur": "^0.25.0 || ^0.26.0 || ^0.27.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.8.1",
-    "@commitlint/config-conventional": "17.8.1",
-    "@commitlint/cz-commitlint": "17.8.1",
+    "@commitlint/cli": "19.2.1",
+    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/cz-commitlint": "19.2.0",
     "@softwareventures/eslint-config": "7.1.5",
     "@softwareventures/precise-commits": "3.0.33",
     "@softwareventures/prettier-config": "4.0.0",
