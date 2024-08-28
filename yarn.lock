@@ -281,7 +281,7 @@ __metadata:
     "@softwareventures/eslint-config": 7.6.0
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
-    "@softwareventures/precise-commits": 3.0.35
+    "@softwareventures/precise-commits": 4.0.15
     "@softwareventures/prettier-config": 4.0.0
     "@softwareventures/semantic-release-config": 3.1.0
     "@softwareventures/tsconfig": 7.1.1
@@ -940,14 +940,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/array@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@softwareventures/array@npm:6.1.0"
+"@softwareventures/array@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@softwareventures/array@npm:7.0.0"
   dependencies:
     "@softwareventures/nullable": ^1.0.0 || ^2.0.0 || ^3.0.0
     "@softwareventures/ordered": ^1.1.0 || ^2.0.0
     tslib: ^2.0.0
-  checksum: 4ab7c610af9e9e6fc8eb6a1d66f6b131c1e2e9584ac04cf670be23c1ddabfced20406026e77f5c907a49b82aeeed243175771f8c5ba8a6ebaec7b381a11ca1e3
+  checksum: 1dfe929b954847c842117a90f4eabff8b755649dc4cb5341f19001a0daa0408adef6da584754948a7f6e206a6216265ab19dd8aac909f57226510a4acbae0336
   languageName: node
   linkType: hard
 
@@ -1006,15 +1006,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/precise-commits@npm:3.0.35":
-  version: 3.0.35
-  resolution: "@softwareventures/precise-commits@npm:3.0.35"
+"@softwareventures/precise-commits@npm:4.0.15":
+  version: 4.0.15
+  resolution: "@softwareventures/precise-commits@npm:4.0.15"
   dependencies:
-    "@softwareventures/array": 6.1.0
+    "@softwareventures/array": 7.0.0
     "@softwareventures/nullable": 3.2.0
     execa: 5.1.1
     find-up: 5.0.0
-    glob: 8.1.0
+    glob: 10.3.10
     ignore: 5.3.1
     mri: 1.2.0
     ora: 5.4.1
@@ -1022,10 +1022,10 @@ __metadata:
     tslib: 2.6.2
     unknown: 0.2.5
   peerDependencies:
-    prettier: ^1.8.0 || ^2.0.0
+    prettier: ^1.8.0 || ^2.0.0 || ^3.0.0
   bin:
     precise-commits: lib/cli.js
-  checksum: 67bf5f3f298367e2365c775df6cae911223a661cc15fc8049489e4e71452b254e174621f7dbe9c5f5810352e88a966135fb5de91250da71b031f6924709ff2e9
+  checksum: 4349d67fae2486783bca35d4a72210d9e820fbcf50f03fff0da2315166b8e0d3ebc4d987bec237b79ad43b4a7672a3b51a7f16d4b7b9a6310c7974e6be607f97
   languageName: node
   linkType: hard
 
@@ -3666,6 +3666,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"glob@npm:10.3.10, glob@npm:^10.2.2":
+  version: 10.3.10
+  resolution: "glob@npm:10.3.10"
+  dependencies:
+    foreground-child: ^3.1.0
+    jackspeak: ^2.3.5
+    minimatch: ^9.0.1
+    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
+    path-scurry: ^1.10.1
+  bin:
+    glob: dist/esm/bin.mjs
+  checksum: 4f2fe2511e157b5a3f525a54092169a5f92405f24d2aed3142f4411df328baca13059f4182f1db1bf933e2c69c0bd89e57ae87edd8950cba8c7ccbe84f721cf3
+  languageName: node
+  linkType: hard
+
 "glob@npm:7.2.3, glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
@@ -3680,7 +3695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:8.1.0, glob@npm:^8.0.1":
+"glob@npm:^8.0.1":
   version: 8.1.0
   resolution: "glob@npm:8.1.0"
   dependencies:
@@ -3690,21 +3705,6 @@ __metadata:
     minimatch: ^5.0.1
     once: ^1.3.0
   checksum: 92fbea3221a7d12075f26f0227abac435de868dd0736a17170663783296d0dd8d3d532a5672b4488a439bf5d7fb85cdd07c11185d6cd39184f0385cbdfb86a47
-  languageName: node
-  linkType: hard
-
-"glob@npm:^10.2.2":
-  version: 10.3.10
-  resolution: "glob@npm:10.3.10"
-  dependencies:
-    foreground-child: ^3.1.0
-    jackspeak: ^2.3.5
-    minimatch: ^9.0.1
-    minipass: ^5.0.0 || ^6.0.2 || ^7.0.0
-    path-scurry: ^1.10.1
-  bin:
-    glob: dist/esm/bin.mjs
-  checksum: 4f2fe2511e157b5a3f525a54092169a5f92405f24d2aed3142f4411df328baca13059f4182f1db1bf933e2c69c0bd89e57ae87edd8950cba8c7ccbe84f721cf3
   languageName: node
   linkType: hard
 
