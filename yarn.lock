@@ -283,7 +283,7 @@ __metadata:
     "@softwareventures/nullable": ^3.0.0
     "@softwareventures/precise-commits": 3.0.35
     "@softwareventures/prettier-config": 4.0.0
-    "@softwareventures/semantic-release-config": 3.1.0
+    "@softwareventures/semantic-release-config": 5.1.0
     "@softwareventures/tsconfig": 7.3.0
     "@types/node": 17.0.45
     "@typescript-eslint/eslint-plugin": 5.62.0
@@ -1045,13 +1045,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/semantic-release-config@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@softwareventures/semantic-release-config@npm:3.1.0"
+"@softwareventures/semantic-release-config@npm:5.1.0":
+  version: 5.1.0
+  resolution: "@softwareventures/semantic-release-config@npm:5.1.0"
   dependencies:
-    conventional-changelog-conventionalcommits: ^4.6.3 || ^5.0.0
-    tslib: 2.4.1
-  checksum: eec919e062f0672fc04fd8aabf182714d645d263a8b77f535ddbf29b7be30e03198fca737bbe36e4ccc0cb3fcac787eb5f7b012c3a238a84454eeb8b2c18dd1b
+    tslib: 2.8.1
+  peerDependencies:
+    conventional-changelog-conventionalcommits: ^4.6.3 || ^5.0.0 || ^6.0.0 || ^7.0.0
+    pinst: ">= 2.1.6"
+    semantic-release: ^17.0.7 || ^18.0.0 || ^19.0.0 || ^20.0.0 || ^21.0.0 || ^22.0.0 || ^23.0.0
+    semantic-release-pinst: ^1.0.0
+  checksum: b2af50c0f6f39660b4f33100c6c432657fe8cb5643e315badb051a96c439b0819fdff13d95712b6f6c355c4211653f01a104ac8f5126d4286f60056ab4cf392a
   languageName: node
   linkType: hard
 
@@ -2341,17 +2345,6 @@ __metadata:
   dependencies:
     compare-func: ^2.0.0
   checksum: ddc59ead53a45b817d83208200967f5340866782b8362d5e2e34105fdfa3d3a31585ebbdec7750bdb9de53da869f847e8ca96634a9801f51e27ecf4e7ffe2bad
-  languageName: node
-  linkType: hard
-
-"conventional-changelog-conventionalcommits@npm:^4.6.3 || ^5.0.0":
-  version: 5.0.0
-  resolution: "conventional-changelog-conventionalcommits@npm:5.0.0"
-  dependencies:
-    compare-func: ^2.0.0
-    lodash: ^4.17.15
-    q: ^1.5.1
-  checksum: b67d12e4e0fdde5baa32c3d77af472de38646a18657b26f5543eecce041a318103092fbfcef247e2319a16957c9ac78c6ea78acc11a5db6acf74be79a28c561f
   languageName: node
   linkType: hard
 
@@ -7719,13 +7712,6 @@ __metadata:
   version: 2.4.0
   resolution: "tslib@npm:2.4.0"
   checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
-  languageName: node
-  linkType: hard
-
-"tslib@npm:2.4.1":
-  version: 2.4.1
-  resolution: "tslib@npm:2.4.1"
-  checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
   languageName: node
   linkType: hard
 
