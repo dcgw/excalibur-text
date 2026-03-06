@@ -278,7 +278,7 @@ __metadata:
     "@commitlint/config-conventional": 17.8.1
     "@commitlint/cz-commitlint": 17.8.1
     "@softwareventures/chain": ^2.0.2
-    "@softwareventures/eslint-config": 7.10.0
+    "@softwareventures/eslint-config": 9.5.0
     "@softwareventures/iterable": ^3.2.0
     "@softwareventures/nullable": ^3.0.0
     "@softwareventures/precise-commits": 3.0.36
@@ -980,22 +980,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/eslint-config@npm:7.10.0":
-  version: 7.10.0
-  resolution: "@softwareventures/eslint-config@npm:7.10.0"
+"@softwareventures/eslint-config@npm:9.5.0":
+  version: 9.5.0
+  resolution: "@softwareventures/eslint-config@npm:9.5.0"
   dependencies:
     tslib: ^2.3.1
   peerDependencies:
-    "@typescript-eslint/eslint-plugin": ^5.3.0 || ^6.0.0 || ^7.0.0
-    "@typescript-eslint/parser": ^5.3.0 || ^6.0.0 || ^7.0.0
-    eslint: ^7.0.0 || ^8.0.0
-    eslint-config-prettier: ^8.3.0 || ^9.0.0
+    "@typescript-eslint/eslint-plugin": ^8.0.0
+    "@typescript-eslint/parser": ^8.0.0
+    eslint: ^8.0.0
+    eslint-config-prettier: ^8.3.0 || ^9.0.0 || ^10.0.0
     eslint-plugin-import: ^2.25.2
-    eslint-plugin-jsdoc: ^37.0.3 || ^38.0.0 || ^39.0.0 || ^40.0.0 || ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 || ^46.0.0 || ^47.0.0 || ^48.0.0 || ^49.0.0 || ^50.0.0
+    eslint-plugin-jsdoc: ^37.0.3 || ^38.0.0 || ^39.0.0 || ^40.0.0 || ^41.0.0 || ^42.0.0 || ^43.0.0 || ^44.0.0 || ^45.0.0 || ^46.0.0 || ^47.0.0 || ^48.0.0 || ^49.0.0 || ^50.0.0 || ^51.0.0 || ^52.0.0 || ^54.0.0 || ^55.0.0 || ^56.0.0 || ^57.0.0 || ^58.0.0 || ^59.0.0 || ^60.0.0 || ^61.0.0 || ^62.0.0
     eslint-plugin-prefer-arrow: ^1.2.3
-    eslint-plugin-sonarjs: ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^1.0.0 || ^2.0.0 || ^3.0.0
-    typescript: ^3.8.3 || ^4.0.0 || ^5.0.0
-  checksum: f6348559f300692b68fc9016eb6f8f69ebaafd17afa07d74666b10565dc51df16cdf394c766c535eb9e072bc6ae4e3211fc5967317b64304106542f2f390adde
+    eslint-plugin-sonarjs: ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^0.14.0 || ^0.15.0 || ^0.16.0 || ^0.17.0 || ^0.18.0 || ^0.19.0 || ^0.20.0 || ^0.21.0 || ^0.22.0 || ^0.23.0 || ^0.24.0 || ^0.25.0 || ^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0
+    typescript: ^4.8.4 || ^5.0.0
+  checksum: 9cb716edec5be24443f8859a6637caea71cb2234710212b3e9d3fbfd96eed96c4929263a406e3618f95fc725e6429bd92b50f1526bc806157eac9ec41390a41e
   languageName: node
   linkType: hard
 
