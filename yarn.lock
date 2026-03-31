@@ -284,7 +284,7 @@ __metadata:
     "@softwareventures/precise-commits": 3.0.36
     "@softwareventures/prettier-config": 4.0.0
     "@softwareventures/semantic-release-config": 3.1.0
-    "@softwareventures/tsconfig": 7.3.0
+    "@softwareventures/tsconfig": 8.1.2
     "@types/node": 17.0.45
     "@typescript-eslint/eslint-plugin": 5.62.0
     "@typescript-eslint/parser": 5.62.0
@@ -1069,12 +1069,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@softwareventures/tsconfig@npm:7.3.0":
-  version: 7.3.0
-  resolution: "@softwareventures/tsconfig@npm:7.3.0"
+"@softwareventures/tsconfig@npm:8.1.2":
+  version: 8.1.2
+  resolution: "@softwareventures/tsconfig@npm:8.1.2"
   peerDependencies:
-    typescript: ^4.5.0 || ^5.0.0
-  checksum: 754720e332e7970a96ef9b624b38d638b32afc504b832f497fb752d8231842511b1697b37328f035b30427c239123b44e8fb91a63c23176ffb8f0bf18aa88fce
+    typescript: ^5.2.2
+  checksum: 6407333c4de530b417f735cbf7d06fd27f5d60141e49517fe5423f592715e1cf20306f2672af44d29c75b77fb0c50b53187d6eecc46f2664eb55fbd644e3a368
   languageName: node
   linkType: hard
 
